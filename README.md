@@ -13,13 +13,24 @@ ESLint config with support for the following:
 Install the NPM package `npm install @wunderwerk/eslint-config` and then
 reference the config in your `.eslintrc.js`:
 
-```js
-module.exports = {
-  extends: [
-    '@wunderwerk/eslint-config'
+```json
+{
+  "extends": [
+    "@wunderwerk/eslint-config"
   ]
-};
+}
 ```
 
 The module provides two different configs, one for JavaScript and one for TypeScript.
-The default config shown in the example 
+The default config shown in the example above is for JavaScript.
+
+To use the TypeScript config, extend the config as follows:
+
+```json
+{
+  "parser": "@typescript-eslint/parser",
+  "extends": [
+    "@wunderwerk/eslint-config/typescript"
+  ]
+}
+```
