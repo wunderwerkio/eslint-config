@@ -1,0 +1,36 @@
+{
+  "name": "@wunderwerk/eslint-config",
+  "version": "1.0.0",
+  "description": "Shared eslint config for wunderwerk projects.",
+  "main": "index.js",
+  "scripts": {
+    "format": "prettier --check --loglevel warn *.js",
+    "format:fix": "prettier --write --loglevel warn *.js"
+  },
+  "keywords": [
+    "eslint"
+  ],
+  "author": {
+    "name": "Christian Foidl",
+    "email": "christian@wunderwerk.io",
+    "url": "https://wunderwerk.io/"
+  },
+  "license": "UNLICENSED",
+  "peerDependencies": {
+    "@typescript-eslint/eslint-plugin": ">= 5",
+    "eslint": ">= 8",
+    "eslint-plugin-import": ">= 2",
+    "eslint-plugin-jsdoc": ">= 39",
+    "eslint-plugin-react": ">= 7",
+    "eslint-plugin-react-hooks": ">= 4"
+  },
+  "dependencies": {
+    "eslint-config-prettier": "^8.5.0"
+  },
+  "devDependencies": {
+    "prettier": "^2.7.1"
+  },
+  "publishConfig": {
+    "registry": "https://npm.wunderwerk.dev"
+  }
+}
