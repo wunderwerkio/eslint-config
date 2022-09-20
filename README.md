@@ -10,7 +10,7 @@ ESLint config with support for the following:
 
 ## Usage
 
-Install the NPM package `npm install @wunderwerk/eslint-config` and then
+Install the NPM package `npm install -D @wunderwerk/eslint-config` and then
 reference the config in your `.eslintrc.js`:
 
 ```json
@@ -33,4 +33,19 @@ To use the TypeScript config, extend the config as follows:
     "@wunderwerk/eslint-config/typescript"
   ]
 }
+```
+
+### Peer Dependencies
+
+This config references other eslint plugins. These plugins must be installed in
+your project and are defined as peer dependencies in this package:
+
+```bash
+npm install -D \
+  eslint \
+  eslint-plugin-import \
+  eslint-plugin-jsdoc \
+  eslint-plugin-react \
+  eslint-plugin-react-hooks \
+  @typescript-eslint/eslint-plugin
 ```
