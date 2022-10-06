@@ -1,11 +1,6 @@
 module.exports = {
   plugins: ['import', 'jsdoc'],
-  extends: ['plugin:react/recommended', 'plugin:react-hooks/recommended', 'plugin:jsdoc/recommended', 'prettier'],
-  settings: {
-    react: {
-      version: 'detect',
-    },
-  },
+  extends: ['plugin:jsdoc/recommended', 'prettier'],
   rules: {
     'no-restricted-globals': [
       'error',

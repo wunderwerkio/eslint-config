@@ -21,7 +21,7 @@ reference the config in your `.eslintrc.js`:
 }
 ```
 
-The module provides two different configs, one for JavaScript and one for TypeScript.
+The module provides config variants for JavaScript and one for TypeScript.
 The default config shown in the example above is for JavaScript.
 
 To use the TypeScript config, extend the config as follows:
@@ -31,6 +31,18 @@ To use the TypeScript config, extend the config as follows:
   "parser": "@typescript-eslint/parser",
   "extends": [
     "@wunderwerk/eslint-config/typescript"
+  ]
+}
+```
+
+### React
+
+You can add react specific rules by extending the `react` config:
+
+```json
+{
+  "extends": [
+    "@wunderwerk/eslint-config/react"
   ]
 }
 ```
