@@ -2,21 +2,6 @@ module.exports = {
   plugins: ['import', 'jsdoc'],
   extends: ['plugin:jsdoc/recommended', 'prettier'],
   rules: {
-    'no-restricted-globals': [
-      'error',
-      {
-        name: 'window',
-        message: 'Use `self` instead of `window` to access the global context everywhere (including workers).',
-      },
-      {
-        name: 'setTimeout',
-        message: 'Use `self.setTimeout`',
-      },
-      {
-        name: 'setInterval',
-        message: 'Use `self.setInterval`',
-      },
-    ],
     'import/first': 'warn',
     'no-var': 'warn',
     'no-empty': 'warn',
