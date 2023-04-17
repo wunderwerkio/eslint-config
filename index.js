@@ -5,7 +5,12 @@ module.exports = {
     'import/first': 'warn',
     'no-var': 'warn',
     'no-empty': 'warn',
-    'no-unused-vars': 'warn',
+    'no-unused-vars': [
+      'warn',
+      {
+        argsIgnorePattern: '^_',
+      },
+    ],
     'no-console': [
       'warn',
       {
