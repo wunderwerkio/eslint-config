@@ -17,10 +17,12 @@
   },
   "license": "UNLICENSED",
   "peerDependencies": {
-    "@typescript-eslint/eslint-plugin": ">= 5",
     "eslint": ">= 8",
     "eslint-plugin-import": ">= 2",
-    "eslint-plugin-jsdoc": ">= 39",
+    "eslint-plugin-jsdoc": ">= 39"
+  },
+  "optionalDependencies": {
+    "@typescript-eslint/eslint-plugin": ">= 5",
     "eslint-plugin-react": ">= 7",
     "eslint-plugin-react-hooks": ">= 4"
   },
