@@ -8,6 +8,7 @@ module.exports = {
     'no-unused-vars': [
       'warn',
       {
+        varsIgnorePattern: '^_',
         argsIgnorePattern: '^_',
       },
     ],

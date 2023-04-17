@@ -9,6 +9,7 @@ module.exports = {
           'warn',
           {
             varsIgnorePattern: '^_',
+            argsIgnorePattern: '^_',
           },
         ],
         '@typescript-eslint/prefer-optional-chain': 'error',
