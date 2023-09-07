@@ -1,6 +1,6 @@
 {
   "name": "@wunderwerk/eslint-config",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Shared eslint config for wunderwerk projects.",
   "main": "index.js",
   "scripts": {
@@ -10,12 +10,8 @@
   "keywords": [
     "eslint"
   ],
-  "author": {
-    "name": "Christian Foidl",
-    "email": "christian@wunderwerk.io",
-    "url": "https://wunderwerk.io/"
-  },
-  "license": "UNLICENSED",
+  "author": "Christian Foidl <christian@wunderwerk.io> (https://wunderwerk.io)",
+  "license": "MIT",
   "peerDependencies": {
     "eslint": ">= 8",
     "eslint-plugin-import": ">= 2",
@@ -34,5 +30,13 @@
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org"
-  }
+  },
+  "files": [
+    "README.md",
+    "LICENSE",
+    "base.js",
+    "index.js",
+    "react.js",
+    "typescript.js"
+  ]
 }
