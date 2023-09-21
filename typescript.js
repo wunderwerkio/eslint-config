@@ -43,7 +43,7 @@ module.exports = {
               'ClassExpression',
               // Select a FunctionDeclaration that is not a descendant of
               // another FunctionDeclaration.
-              ':function:not(:function :function)',
+              ":function:not(:function :function):not(CallExpression > :function)",
             ],
           },
         ],
