@@ -48,12 +48,12 @@ module.exports = {
           MethodDefinition: false,
         },
         contexts: [
-          "ClassDeclaration",
-          "ClassExpression",
+          'ClassDeclaration',
+          'ClassExpression',
           // Select a FunctionDeclaration that is not a descendant of
           // another FunctionDeclaration.
-          ":function:not(:function :function):not(CallExpression > :function)",
-        ]
+          ':function:not(:function :function):not(CallExpression > :function):not(Property > :function)',
+        ],
       },
     ],
   },
