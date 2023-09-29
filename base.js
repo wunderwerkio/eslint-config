@@ -29,7 +29,7 @@ module.exports = {
     'no-void': 'error',
     'no-useless-catch': 'error',
     'no-prototype-builtins': 'off',
-    'jsdoc/require-description-complete-sentence': 'warn',
+    'jsdoc/require-description-complete-sentence': ['warn', { abbreviations: ['etc', 'e.g.', 'i.e.'] }],
     'jsdoc/require-hyphen-before-param-description': 'warn',
     'jsdoc/no-blank-block-descriptions': 'error',
     'jsdoc/tag-lines': ['warn' | 'warn', 'never', { startLines: 1 }],
