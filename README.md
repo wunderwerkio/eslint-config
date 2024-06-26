@@ -1,5 +1,7 @@
 # @wunderwerk/eslint-config
 
+> Support for ESLint v9 was added in version v2!
+
 ESLint config with support for the following:
 
 - React
