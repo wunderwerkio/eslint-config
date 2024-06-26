@@ -74,7 +74,7 @@ export default [
     },
   },
   {
-    files: ['*.stories.jsx', '*.stories.js', '*.stories.tsx', '*.stories.ts'],
+    files: ['**/*.stories.jsx', '**/*.stories.js', '**/*.stories.tsx', '**/*.stories.ts'],
     rules: {
       'jsdoc/require-jsdoc': 'off',
     },

@@ -13,7 +13,7 @@ export default [
     },
   },
   {
-    files: ['*.stories.tsx', '*.stories.ts'],
+    files: ['**/*.stories.jsx', '**/*.stories.js', '**/*.stories.tsx', '**/*.stories.ts'],
     rules: {
       'react-hooks/rules-of-hooks': 'off',
     },

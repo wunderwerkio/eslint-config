@@ -13,7 +13,7 @@ export default [
   ...tseslint.configs.recommended,
   ...base,
   {
-    files: ['*.ts', '*.tsx'],
+    files: ['**/*.ts', '**/*.tsx'],
     /** @type {RuleRecord} */
     rules: {
       '@typescript-eslint/no-unused-vars': [
