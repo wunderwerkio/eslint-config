@@ -10,8 +10,8 @@ import base from './base.js';
 /** @typedef {Partial<Record<string, RuleEntry>>} RuleRecord */
 
 export default [
-  ...tseslint.configs.recommended,
   ...base,
+  ...tseslint.configs.recommended,
   {
     files: ['**/*.ts', '**/*.tsx'],
     /** @type {RuleRecord} */
