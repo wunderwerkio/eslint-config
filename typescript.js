@@ -1,6 +1,6 @@
 import tseslint from 'typescript-eslint';
 
-import base from './base.mjs';
+import base from './base';
 
 /** @typedef {0 | 1 | 2} Severity */
 /** @typedef {"error" | "off" | "warn"} SeverityString */
