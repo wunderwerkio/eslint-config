@@ -1,11 +1,22 @@
 {
   "name": "@wunderwerk/eslint-config",
-  "version": "1.0.7",
+  "version": "2.0.0",
   "description": "Shared eslint config for wunderwerk projects.",
-  "main": "index.js",
+  "type": "module",
+  "exports": {
+    "./base": {
+      "import": "./base.js"
+    },
+    "./react": {
+      "import": "./react.js"
+    },
+    "./typescript": {
+      "import": "./typescript.js"
+    }
+  },
   "scripts": {
-    "format": "prettier --check --loglevel warn *.js",
-    "format:fix": "prettier --write --loglevel warn *.js"
+    "format": "prettier --check --log-level warn *.js",
+    "format:fix": "prettier --write --log-level warn *.js"
   },
   "keywords": [
     "eslint"
@@ -13,20 +24,20 @@
   "author": "Christian Foidl <christian@wunderwerk.io> (https://wunderwerk.io)",
   "license": "MIT",
   "peerDependencies": {
-    "eslint": ">= 8",
-    "eslint-plugin-import": ">= 2",
-    "eslint-plugin-jsdoc": ">= 39"
+    "eslint": ">= 9",
+    "eslint-plugin-jsdoc": ">= 48"
   },
   "optionalDependencies": {
-    "@typescript-eslint/eslint-plugin": ">= 5",
-    "eslint-plugin-react": ">= 7",
-    "eslint-plugin-react-hooks": ">= 4"
+    "@typescript-eslint/eslint-plugin": "^7.14.1",
+    "eslint-plugin-react": "^7.34.3",
+    "eslint-plugin-react-hooks": "^4.6.2"
   },
   "dependencies": {
-    "eslint-config-prettier": "^8.5.0"
+    "@eslint/compat": "^1.1.0",
+    "eslint-config-prettier": "^9.1.0"
   },
   "devDependencies": {
-    "prettier": "^2.7.1"
+    "prettier": "^3.3.2"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org"
