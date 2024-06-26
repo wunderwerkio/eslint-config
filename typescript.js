@@ -32,6 +32,7 @@ export default [
         },
       ],
       'jsdoc/require-returns': 'off',
+      'jsdoc/require-param-type': 'off',
       'jsdoc/require-description-complete-sentence': ['warn', { abbreviations: ['etc', 'e.g.', 'i.e.'] }],
       'jsdoc/require-hyphen-before-param-description': 'warn',
       'jsdoc/no-blank-block-descriptions': 'error',
